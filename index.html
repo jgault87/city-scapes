@@ -7,6 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>City Scapes</title>
 </head>
@@ -24,7 +27,7 @@
   <main class="flex-row justify-space-between">
     <div class="col-12 col-md-4">
 
-      <div class="card">
+      <div class="card-input">
         <h3 class="card-header text-uppercase">Enter a City Name</h3>
         <form id="user-form" class="card-body">
           <label class="form-label" for="cityname">City Name</label>
@@ -37,24 +40,39 @@
       <div class="col-12 col-md-8">
         <h2 class="subtitle"> City From Space <span id="city-search-term"></span></h2>
         <div id="photo-container" class="picture-fromSpace"></div> -->
-
-         <div class="row">
-              <div class="col-12 col-md-8">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="/assets/Images/Rhyming Gone Fishing.jpg">
-                    <span class="card-title">Card Title</span>
-                  </div>
-                  <div class="card-content">
-                    <p>Just Something to Look At</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#">This is a link</a>
-                  </div>
-                </div>
+ 
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <div class="card">
+              <div class="card-image">
+                <img src="/assets/Images/Rhyming Gone Fishing.jpg" alt="poem page">
+                <span class="card-title">Card Title</span>
               </div>
-            </div>     
-            </main>
+              <div class="card-content">
+                <div class="row">
 
-           
+                  <div class="col s4">
+                    <span class="facts" id="fact1"> fact 1                    
+                    </span>
+                    <!-- Promo Content 1 goes here -->
+                  </div>
+                  <div class="col s4">
+                    <span class="facts" id="fact2"> fact 2</span>
+                    <!-- Promo Content 2 goes here -->
+                  </div>
+                  <div class="col s4">
+                    <span class="facts" id="fact3"> fact 3</span>
+                    <!-- Promo Content 3 goes here -->
+                  </div>
+            
+                </div>
+                      
+              </div>
+              <div class="card-action">
+                <a href="#">This is a link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main> 
       <!-- start modal here -->

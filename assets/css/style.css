@@ -42,6 +42,8 @@
     font-size: 1.2rem;
   }
   
+
+
   .btn {
     font-size: 1.3rem;
     text-decoration: none;
@@ -146,7 +148,16 @@
   }
   
   /* CARDS */
-  .card {
+.card {
+  margin: 0 0 20px 0;
+  width: 80%;
+  height: 80%;
+}
+ .card-image {
+   width:fit-content;
+   height: fit-content;
+ }
+  .card-input {
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
     border-radius: var(--border-radius);
