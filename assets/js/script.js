@@ -1,7 +1,7 @@
 var userFormEl = document.querySelector('#user-form');
-var getCityEl = document.querySelector('#cityname');
+var getCityEl = document.querySelector('#city-name');
 var button = document.querySelector('.btn');
-var img = document.querySelector('img');
+var img = document.querySelector('#image');
 
 
 userFormEl.addEventListener("submit", function(event) {
