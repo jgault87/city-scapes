@@ -1,0 +1,20 @@
+
+ 
+.modal {
+ 
+  left: 0;
+ 
+  right: 0;
+ 
+  background-color: #fafafa;
+ 
+  padding: 0;
+ 
+  max-height: 60%;
+ 
+  width: 50%;
+ 
+  will-change: top, opacity;
+ 
+}
+ 
