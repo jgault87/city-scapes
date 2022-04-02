@@ -21,7 +21,12 @@
     font-size: 16px;
   }
   
-  h1,
+  h1 {
+    font-size: 65px;
+    color: aqua;
+    font-weight: bolder;
+
+  }
   h2,
   h3,
   h4,
@@ -71,8 +76,8 @@
   
   .hero {
     padding: 3% 4%;
-    background-color: paleturquoise;
-    color: olivedrab;
+    background-image: url(/assets/Images/satellite.jpg);
+    color: rgb(226, 235, 208);
   }
   
   .hero p {
@@ -82,8 +87,8 @@
    /* CARDS */
 .card {
   margin: 0 0 20px 0;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
 }
  .card-image {
    width:fit-content;
@@ -106,6 +111,26 @@
   
   .card-body {
     padding: 2.5%;
+  }
+
+  .facts {
+    display: flex;
+    
+
+    font-size: 20px;
+
+    border: 5px solid black;
+  }
+
+  .fact1, 
+  .fact2, 
+  .fact3 {
+
+    border: 3px greenyellow;
+    border-style: dashed;
+    border-radius: 15px;
+
+
   }
   
   /* FORM */

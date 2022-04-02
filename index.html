@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+<link rel="script" href="/assets/js/script.js"/>
   <link rel="stylesheet" href="./assets/css/style.css" />
   <title>City Scapes</title>
 </head>
@@ -32,7 +32,8 @@
         <h3 class="card-header text-uppercase">Enter a City Name</h3>
         <form id="user-form" class="card-body">
           <label class="form-label" for="cityname">City Name</label>
-          <input name="cityname" id="city-name" type="text" autofocus="true" class="form-input" />
+          <input name="cityname1" id="city-name" type="text" autofocus="true" class="form-input" />
+          
           <button type="submit" class="btn">Get Your Info</button>
         </form>
       </div>
@@ -43,17 +44,17 @@
         <div id="photo-container" class="picture-fromSpace"></div> -->
  
         <div class="row">
-          <div class="col-12 col-md-8">
+          <div class="col-12">
             <div class="card">
               <div class="card-image">
-                <img src="/assets/Images/Rhyming Gone Fishing.jpg" alt="poem page">
+                  <img class="materialboxed" width="650" src="/assets/Images/Rhyming Gone Fishing.jpg" alt="poem page">
                 <span class="card-title">Card Title</span>
               </div>
               <div class="card-content">
-                <div class="row">
+                <div class="row" >
 
                   <div class="col s4">
-                    <span class="facts" id="fact1"> fact 1                    
+                    <span class="facts" id="fact1" rows="5"> fact 1                    
                     </span>
                     <!-- Promo Content 1 goes here -->
                   </div>
@@ -69,9 +70,12 @@
                 </div>
                       
               </div>
+
+              <!-- this is a section where we can insert a hot link wink wink
               <div class="card-action">
                 <a href="#">This is a link</a>
-              </div>
+              </div> -->
+
             </div>
           </div>
         </div>
