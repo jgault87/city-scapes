@@ -71,7 +71,7 @@
   
   .hero {
     padding: 3% 4%;
-    background-color: paleturquoise;
+    background-image: url(/assets/Images/nightearth.jpg);
     color: olivedrab;
   }
   
@@ -83,7 +83,7 @@
 .card {
   margin: 0 0 20px 0;
   width: 80%;
-  height: 80%;
+  /* height: 80%; */
 }
  .card-image {
    width:fit-content;
