@@ -142,3 +142,10 @@ height: 80%;
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/* .crop {
+  width: 800px;
+  height: 600px;
+  object-fit: cover;
+  overflow: hidden;
+} */

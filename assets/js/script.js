@@ -1,38 +1,22 @@
 var userFormEl = document.querySelector('#user-form');
-var getCityEl = document.querySelector('.form-input');
+var getCityEl = document.querySelector('#cityname');
 var button = document.querySelector('.btn');
+var img = document.querySelector('img');
 
 
-function getLocation () {
-    var apiKey = "hc5qtGlT9ypvJUQ5fubrbpEGCLgW632YW8fGtxbv";
-    var lat = 39.742043;
-    var lon = -104.991531;
-    var newImg = document.createElement("img");
-    newImg.setAttribute("id", "earth-image");
-    
+userFormEl.addEventListener("submit", function(event) {
+    event.preventDefault();
+    var url = "https://api.teleport.org/api/urban_areas/slug:" + getCityEl.value + "/images/";
 
-    var apiUrl = "https://api.nasa.gov/planetary/earth/imagery?lon=" + lon + "&lat=" + lat + "&api_key=" + apiKey;
-  
-    fetch(apiUrl)
-        .then(res => res.json())
-        .then(result => {
-            console.log(result)
-            newImg.src = result.message
+    fetch(url)
+        .then(function(response) {
+            if (response.ok) {
+                console.log(response);
+                response.json().then(function (data) {
+                    console.log(data);
+
+                    img.src = data.photos[0].image.web;
+                })
+            }
         })
-        .catch(err=>console.log(err))
-        // .then(function (response) {
-        //     if (response.ok) {
-        //         console.log(response);
-        //         response.json().then(function (data) {
-        //             console.log(data);
-        //     });
-        //     } else {
-        //         alert("Error: " + response.statusText);
-        //     }
-        // })
-        // .catch(function (error) {
-        //     alert("Unable to get location image");
-        // });
-};
-
-userFormEl.addEventListener('submit', getLocation);
+})
