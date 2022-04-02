@@ -6,7 +6,10 @@ var img = document.querySelector('#image');
 
 userFormEl.addEventListener("submit", function(event) {
     event.preventDefault();
-    var url = "https://api.teleport.org/api/urban_areas/slug:" + getCityEl.value + "/images/";
+    getCoordinates(getCityEl.value);
+
+
+    var url = "https://api.teleport.org/api/urban_areas/slug:" + getCityEl.value.toLowerCase() + "/images/";
 
     fetch(url)
         .then(function(response) {
