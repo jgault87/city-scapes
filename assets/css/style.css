@@ -69,18 +69,34 @@
     display: inline;
   }
   
-  .hero {
-    padding: 3% 4%;
+  .hero-image {
+    
     background-image: url(/assets/Images/nightearth.jpg);
-    color: olivedrab;
+    background-color: bisque;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+  }
+  .hero-text {
+    color: azure;
+    position: absolute;
   }
   
-  .hero p {
-    max-width: 75%;
+  .hero-text p {
+   
+    font-size: 35px;
+    color: azure;
+    position: absolute;
   }
   
    /* CARDS */
-.card {
+  .card {
+  display: flex;
+  align-items: center;
   margin: 0 0 20px 0;
   width: 80%;
   /* height: 80%; */
@@ -106,6 +122,10 @@
   
   .card-body {
     padding: 2.5%;
+  }
+
+  .facts {
+    border: 4px, solid, black;
   }
   
   /* FORM */
