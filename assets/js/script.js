@@ -23,3 +23,8 @@ userFormEl.addEventListener("submit", function(event) {
             }
         })
 })
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.materialboxed');
+//     var instances = M.Materialbox.init(elems, options);
+//   });
