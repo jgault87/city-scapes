@@ -21,7 +21,12 @@
     font-size: 16px;
   }
   
-  h1,
+  h1 {
+    font-size: 65px;
+    color: aqua;
+    font-weight: bolder;
+
+  }
   h2,
   h3,
   h4,
@@ -34,7 +39,7 @@
   }
   
   main {
-    margin: 20px auto;
+    margin: 20px;
     width: 94%;
   }
   
@@ -71,7 +76,8 @@
   
   .hero-image {
     
-    background-image: url(/assets/Images/A_time-lapse_view_of_Earth_from_the_Space_Station_from_Africa_to_Russia_pillars.png);
+    background-image: url(/assets/Images/earthfrommoon.jpg);
+
     background-color: bisque;
     height: 200px;
     background-position: center;
@@ -97,6 +103,22 @@
   .card {
   display: flex;
   align-items: center;
+  width: 80vw;
+  height: 50vh;
+  margin: 0 0 20px 0;
+  
+ }
+ .card-image {
+   display: flex;
+   align-items: center;
+   width: 100vw;
+   
+   
+ }
+  .card-input {
+    display: flex;
+    height: 200px;
+    width: 600px;
 
   margin: 0 0 20px 0;
   width: 80%;
@@ -107,7 +129,6 @@
    height: 200vh;
  }
   .card-input {
-    
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
     border-radius: var(--border-radius);
@@ -127,7 +148,13 @@
   }
 
   .facts {
-    border: 4px, solid, black;
+    
+    display: inline;
+    align-items: baseline;
+
+    font-size: 20px;
+
+    border: 5px solid black;
   }
   
   /* FORM
@@ -155,15 +182,24 @@
   /* .min-100-vh {
     min-height: 100vh;
   }
-  
-  .min-100-vw {
-    min-width: 100vw;
+
+  .fact1, 
+  .fact2, 
+  .fact3 {
+    
+    display: flex;
+    align-items: baseline;
+
+    border: 3px greenyellow;
+    border-style: dashed;
+    border-radius: 15px;
+
+
   }
-  
-  /* FONT UTILS */
-  /* .text-uppercase {
-    text-transform: uppercase;
+
+  .page-footer {
+    background-color: #6f6866;
+
   }
-  
-  
- */ 
+
+
