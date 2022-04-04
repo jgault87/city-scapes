@@ -74,27 +74,48 @@
     display: inline;
   }
   
-  .hero {
-    padding: 3% 4%;
-    background-image: url(/assets/Images/satellite.jpg);
-    color: rgb(226, 235, 208);
+  .hero-image {
+    
+  
+    background-color: bisque;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+  }
+  .hero-text {
+    color: azure;
+    position: absolute;
   }
   
-  .hero p {
-    max-width: 75%;
+  .hero-text p {
+   
+    font-size: 35px;
+    color: azure;
+    position: absolute;
   }
   
    /* CARDS */
-.card {
+  .card {
+  display: flex;
+  align-items: center;
+  width: 80vw;
+  height: 100vh;
   margin: 0 0 20px 0;
-  width: 100%;
-  height: 100%;
-}
+  
+ }
  .card-image {
-   width:fit-content;
-   height: fit-content;
+   display: flex;
+   align-content: center;
+   width: 100vw;
+   height: 100vh;
+   
  }
   .card-input {
+    
     margin: 0 0 20px 0;
     border: 3px solid var(--dark);
     border-radius: var(--border-radius);
@@ -114,7 +135,7 @@
   }
 
   .facts {
-    display: flex;
+    
     
 
     font-size: 20px;
@@ -133,39 +154,9 @@
 
   }
   
-  /* FORM */
-  .form-label,
-  .form-input,
-  .form-textarea {
-    display: block;
+  .page-footer {
+    background-color: #6f6866;
+
   }
-  
-  .form-label {
-    font-size: 1.1rem;
-    margin: 0 0 0 5px;
-  }
-  
-  .form-input {
-    width: 100%;
-    padding: 3%;
-    margin: 5px 0;
-    font-size: 1.2rem;
-    border: 2px solid var(--light-dark);
-    border-radius: var(--border-radius);
-  }
-  
-  /* HEIGHT / WIDTH UTILS */
-  .min-100-vh {
-    min-height: 100vh;
-  }
-  
-  .min-100-vw {
-    min-width: 100vw;
-  }
-  
-  /* FONT UTILS */
-  .text-uppercase {
-    text-transform: uppercase;
-  }
-  
+
   
