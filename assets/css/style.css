@@ -138,7 +138,8 @@
 
   .facts {
     
-    
+    display: inline;
+    align-items: baseline;
 
     font-size: 20px;
 
