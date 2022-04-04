@@ -39,7 +39,7 @@
   }
   
   main {
-    margin: 20px auto;
+    margin: 20px;
     width: 94%;
   }
   
@@ -109,7 +109,7 @@
  }
  .card-image {
    display: flex;
-   align-content: center;
+   align-items: center;
    width: 100vw;
    
    
