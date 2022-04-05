@@ -19,12 +19,14 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 16px;
+  
 }
   
 h1 {
-  font-size: 65px;
+  font-size: 4em;
   color: aqua;
   font-weight: bolder;
+  text-shadow: 4px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 h2,
@@ -58,7 +60,7 @@ p {
   color: var(--primary);
   border: none;
   outline: none;
-  background-color: var(--light-dark);
+  background-color: rgba(10, 98, 98, 0.645);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
@@ -76,10 +78,10 @@ p {
   
 .hero-image {
     
-  background-image: url(/assets/Images/earthfrommoon.jpg);
+  background-image: url(../Images/nyc-wallpaper.png);
 
   background-color: bisque;
-  height: 200px;
+  height: 250px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,6 +109,7 @@ p {
   width: 80vw;
   height: 50vh;
   margin: 0 0 20px 0;
+  border-radius: 25px;
   
 }
  
@@ -134,15 +137,15 @@ p {
 .card-input {
   margin: 0 0 20px 0;
   border: 3px solid var(--dark);
-  border-radius: var(--border-radius);
+  border-radius: 20px;
 }
   
 .card-header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: var(--primary);
-  background-color: var(--dark);
+  background-color: rgba(10, 98, 98, 0.645);
   padding: 2.5%;
-  border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+  border-radius: 20px;
 }
   
 .card-body {
