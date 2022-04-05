@@ -40,18 +40,22 @@ userFormEl.addEventListener("submit", function(event) {
     });
 });
 
+// open new window to show climate stats
 climate.addEventListener("click", function() {
     window.open("https://teleport.org/cities/denver/widget/weather/?currency=USD");
 });
 
+// open new window to show living cost stats
 livingCost.addEventListener("click", function() {
     window.open("https://teleport.org/cities/denver/widget/costs/?currency=USD");
 });
 
+// open new window to show the salary calculator
 salary.addEventListener("click", function() {
     window.open("https://teleport.org/cities/denver/widget/salaries/?currency=USD");
 });
 
+// open new window to show crime rates
 safety.addEventListener("click", function() {
     window.open("https://teleport.org/cities/denver/widget/crime/?currency=USD");
 });
