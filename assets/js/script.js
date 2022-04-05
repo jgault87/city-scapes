@@ -6,22 +6,12 @@ var getCityEl = document.querySelector('#city-name');
 var button = document.querySelector('.Btn');
 // city image element
 var img = document.querySelector('#image');
-// see more facts button
-var moreFacts = document.querySelector('#more-facts');
-//modal options
-var options = document.querySelector('option');
 //cost of living option
 var livingCost = document.querySelector('#cost');
 //Job Salary Calculator option
 var salary = document.querySelector('#salary');
 //climate option
 var climate = document.querySelector('#climate');
-//modal Content
-var modalContent = document.querySelector('#modal-content');
-// cost script 
-var costScript = document.querySelector('#cost-script');
-// fact script
-var factsScript = document.querySelector('#fact-script');
 // crime rates button
 var safety = document.querySelector('#safety');
 
@@ -72,3 +62,20 @@ document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(elems);
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.modal');
+//     var dropdown = document.querySelectorAll('select');
+//     var instances = M.Modal.init(elems,dropdown);
+//     M.FormSelect.init(dropdown);
+// });
+
+//<div class="input-field col s12">
+    //<select class="form-control">
+        //<option value="" disabled selected>Choose your option</option>
+        //<option value="1">Option 1</option>
+        //<option value="2">Option 2</option>
+        //<option value="3">Option 3</option>
+    //</select>
+    //<label>Materialize Select</label>
+//</div>
