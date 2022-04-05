@@ -11,7 +11,7 @@ userFormEl.addEventListener("submit", function(event) {
     previousSearches.push(getCityEl.value); /*<== pushes search to history/storage function */
     renderHistory();
     storeHistory();
-    getCityEl.value = '';
+    
 
     var url = "https://api.teleport.org/api/urban_areas/slug:" + getCityEl.value.toLowerCase() + "/images/";
 

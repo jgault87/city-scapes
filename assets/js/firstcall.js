@@ -63,8 +63,10 @@ function renderHistory() {
     li.setAttribute("data-index", i);
     li.addEventListener("click", function () {
       //  searchReturn = li.textContent.split('clear');
-      searchReturn = this.textContent;
+      searchReturn = this.textContent.split("clear");
       console.log(searchReturn);
+      getCoordinates(searchReturn);
+      
 
     
 
