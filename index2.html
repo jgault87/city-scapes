@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="style2.css" />
-</head>
+  <body>
+    <div class="container">
+      <h3>A Demo of Modal</h3>
+      <!-- Modal Trigger -->
+      <a
+        class="waves-effect waves-light btn pink darken-1 modal-trigger"
+        href="#demo-modal"
+        >Launch Modal</a
+      >
+      <!-- Modal Structure -->
+      <div id="demo-modal" class="modal">
+        <!-- form -->
+        <div class="form-group">
+          <label for="hourly-rate-input">Hourly Rate ($)</label>
+          <input
+            type="number"
+            id="hourly-rate-input"
+            class="form-control"
+            placeholder="$"
+            min="0"
+            required
+          />
+        </div>
 
-<body>
-  <div class="container">
-    
-    <h3>A Demo of Modal</h3>
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn pink darken-1 modal-trigger" href="#demo-modal">Launch Modal</a>
-    <!-- Modal Structure -->
-    <div id="demo-modal" class="modal">
-<!-- form -->
-<div class="form-group">
-  <label for="hourly-rate-input">Hourly Rate ($)</label>
-  <input type="number" id="hourly-rate-input" class="form-control" placeholder="$" min="0" required />
-</div>
-
-<div class="form-group">
-  <label for="due-date-input">Due Date</label>
-  <input type="text" min='1' id="due-date-input" class="form-control" placeholder="When is the project due?"
-    required />
-</div>
-      <div class="modal-content">
-
-        <h4>A Demo of Simple Modal</h4>
-        <p>Content of the modal goes here. Place marketing text or other information here.</p>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-red btn red lighten-1">Close</a>
+        <div class="form-group">
+          <label for="due-date-input">Due Date</label>
+          <input
+            type="text"
+            min="1"
+            id="due-date-input"
+            class="form-control"
+            placeholder="When is the project due?"
+            required
+          />
+        </div>
+        
+        <div class="modal-content">
+          <h4>A Demo of Simple Modal</h4>
+          <p>
+            Content of the modal goes here. Place marketing text or other
+            information here.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="#!"
+            class="modal-action modal-close waves-effect waves-red btn red lighten-1"
+            >Close</a
+          >
+        </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
-  <script src="simple.js"></script>
-</body>
-
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="simple.js"></script>
+  </body>
 </html>
