@@ -49,7 +49,7 @@ p {
   font-size: 1.2rem;
 }
   
-.Btn {
+.btn {
   font-size: 1.3rem;
   text-decoration: none;
   padding: 6px 5px;
@@ -65,7 +65,7 @@ p {
   transform: translate(-1px, -1px);
 }
   
-.Btn:hover {
+.btn:hover {
   color: var(--primary);
   background-color: var(--tertiary);
   transform: translate(0, 0);
@@ -104,42 +104,36 @@ p {
   
 /* CARDS */
 .card {
+  background-color: #6f6866;
   display: flex;
   align-items: center;
-  width: 80vw;
-  height: 50vh;
   margin: 0 0 20px 0;
   border-radius: 25px;
   
 }
  
-.card-image {
-   
-  display: flex;
-  align-items: center;
-  width: 100vw;
+.card-action {
+  display: inline;
+
 }
   
 .card-input {
   display: flex;
   height: 200px;
-  width: 600px;
+  
   margin: 0 0 20px 0;
   width: 80%;
-  /* height: 80%; */
+ 
 }
  
 .card-image {
+  display: flex;
+  align-items: center;
   width: 300vw;
-  height: 200vh;
+  height: 500px;
+  border-radius: 15px;
 }
-  
-.card-input {
-  margin: 0 0 20px 0;
-  border: 3px solid var(--dark);
-  border-radius: 20px;
-}
-  
+
 .card-header {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: var(--primary);
@@ -182,10 +176,6 @@ p {
   border-radius: var(--border-radius);
 }
   
-/* HEIGHT / WIDTH UTILS */
-/* .min-100-vh {
-  min-height: 100vh;
-}
 
 .fact1, 
 .fact2, 
@@ -203,6 +193,6 @@ p {
 
 .page-footer {
   background-color: #6f6866;
-} */
+} 
 
 
