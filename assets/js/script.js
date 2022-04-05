@@ -3,7 +3,7 @@ var userFormEl = document.querySelector('#user-form');
 // the city provided from the user input
 var getCityEl = document.querySelector('#city-name');
 // submit button
-var button = document.querySelector('.Btn');
+var button = document.querySelector('.btn');
 // city image element
 var img = document.querySelector('#image');
 //cost of living option
