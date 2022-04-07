@@ -6,52 +6,56 @@
   --dark: #b107c0;
   --border-radius: 0.3rem;
 }
-  
+
 * {
   box-sizing: border-box;
 }
-  
-body {
-  
 
- background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+body {
+
+ 
+  background: -webkit-linear-gradient(to right, #2c3e50, #4ca1af);
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
   margin: 0;
   padding: 0;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: var(--dark);
+  font-family: 'Roboto', sans-serif !important; 
   line-height: 1.5;
   font-size: 16px;
-  
+
 }
-  
+
 h1 {
   font-size: 4em;
-  color: rgb(160, 35, 104);
   font-weight: bolder;
   text-shadow: 4px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+h5 {
+  text-align: center;
+
+
 }
 
 h2,
 h3,
 h4,
-h5,
+
 h6 {
-    font-weight: 700;
-    margin: 0;
-    color: var(--dark);
-    line-height: 1.25;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.25;
 }
-  
+
 main {
-  
+
   margin: 20px;
   width: 94%;
 }
-  
+
 p {
   font-size: 1.2rem;
 }
-  
+
 .btn {
   font-size: 1.3rem;
   text-decoration: none;
@@ -60,27 +64,26 @@ p {
   display: block;
   margin: 5px 0;
   border-radius: 15px;
-  color: var(--primary);
   border: none;
   outline: none;
-  background-color: rgba(231, 19, 203, 0.925);
+  background-color: rgba(231, 19, 203, 0.536);
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
-  
+
 .btn:hover {
   color: var(--primary);
   background-color: var(--tertiary);
   transform: translate(0, 0);
   box-shadow: 2px 2px var(--dark);
 }
-  
+
 .btn-inline {
   display: inline;
 }
-  
+
 .hero-image {
-    
+
   background-image: url(../Images/nyc-wallpaper.png);
 
   background-color: rgb(29, 15, 155);
@@ -97,42 +100,39 @@ p {
   color: rgb(19, 216, 216);
   position: absolute;
 }
-  
+
 .hero-text p {
-   
+
   font-size: 35px;
   color: azure;
   position: absolute;
 }
-  
+
 
 .card {
-  background-color: #f248fb52;
-  
-  display: flex;
-  align-items: center;
-
-  align-items: center;
+  background: #0e6fb484;
   margin: 0 0 20px 0;
   border-radius: 25px;
   
+
 }
- 
+
 .card-action {
   display: inline;
 
 }
-  
+
 .card-input {
   display: flex;
   align-items: flex-start;
   height: 200px;
-  background-color: rgb(112, 10, 112);
+  background: #0e6fb484;
   margin: 0 0 20px 0;
- 
- 
+  border-radius: 20px;
+
+
 }
- 
+
 .card-image {
   display: flex;
   align-items: center;
@@ -143,33 +143,33 @@ p {
 
 .card-header {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: var(--primary);
-  background-color: rgba(12, 32, 214, 0.645);
+  color: white;
+  background: radial-gradient(circle, rgba(83, 60, 186, 1) 0%, rgba(97, 48, 142, 1) 100%);
   padding: 2.5%;
   border-radius: 20px;
 }
-  
+
 .card-body {
   padding: 2.5%;
 }
 
-.card-content{
- display: inline;
- color: aliceblue;
-  
+.card-content {
+  display: inline;
+  color: aliceblue;
+
 }
 
-.facts {   
+.facts {
   display: inline;
   align-items: baseline;
   font-size: 20px;
   border: 5px solid black;
 }
 
-.fact1, 
-.fact2, 
+.fact1,
+.fact2,
 .fact3 {
-    
+
   display: flex;
   align-items: baseline;
 
@@ -180,44 +180,55 @@ p {
 }
 
 .page-footer {
-  background-color: #F148FB;
+  background: rgb(83, 60, 186);
+  background: radial-gradient(circle, rgba(83, 60, 186, 1) 0%, rgba(97, 48, 142, 1) 100%);
   height: 200px;
-} 
+}
 
 
 li button {
   float: right;
   border: none;
-  height: 4.4vh;
+  height: 3.4vh;
   cursor: pointer;
   background: #7122FA;
-  color: rgba(213, 207, 216, 0.767);
-  font-size: 1em;
-  border-radius: 10px;
+  color: white;
+  font-size: 1.2vh;
+  border-radius: 5px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
-  background-color: var(--primary);
+
 }
 
 li {
-  height: 5.5vh;
+  height: 4.5vh;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.3vh;
   line-height: 2;
-  background-color: rgba(116, 6, 79, 0.253);
-  border-radius: 5px;
+  background-color: rgba(231, 19, 203, 0.536);
+  border-radius: 10px;
   cursor: pointer;
 }
+/* 
+#wikidata-page {
 
+ font-size: 1.3rem;
+text-decoration: none;
+padding: 6px 5px;
+width: 100%;
+display: block;
+margin: 5px 0;
+border-radius: 15px;
+border: none;
+outline: none;
+background-color: rgba(231, 19, 203, 0.536);
+box-shadow: 3px 3px var(--dark);
+transform: translate(-1px, -1px); 
 
-.seearch-list{
-  display: flex;
-  align-items: flex-start;
-  background-color: #ffacfc;
-}
+} */

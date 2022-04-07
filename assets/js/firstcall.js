@@ -1,6 +1,8 @@
 var APIKey = "f3ffd1bebd9a1cb69ed3311049f6cdca";
 
 function getCoordinates(city) {
+  
+   
   callURL =
     "https://api.openweathermap.org/data/2.5/weather?q=" +
     city +
@@ -34,7 +36,7 @@ function getCoordinates(city) {
         "https://wft-geo-db.p.rapidapi.com/v1/geo/cities?location=" +
           CoordLat +
           CoordLon +
-          "&minPopulation=25000&distanceUnit=MI",
+          "&minPopulation=2500&distanceUnit=MI",
         options
       )
         // .then(response => response.json())
@@ -54,26 +56,44 @@ function getCoordinates(city) {
           let city = response.data[0].city;
           let state = response.data[0].region;
           let country = response.data[0].country;
-
-          var place = city + ', ' + state + ' ' + '(' + country + ')';
-          console.log(place);
-          cardHeadEl.innerHTML = place;
-
-
           let population = response.data[0].population;
           let wikiData = response.data[0].wikiDataId;
 
           let factsURL = "https://www.wikidata.org/wiki/" + wikiData;
 
+          var place = city + ', ' + state + ' ' + '(' + country + ')';
+          console.log(place);
+          cardHeadEl.innerHTML = place;
+          popEl.innerHTML = 'Population:' + ' ' + population;
+
+
+          dataPageEl.innerHTML = '<a href=\"' + factsURL +'\">' + 'WIKIDATA PAGE' + '</a>';
+          dataPageEl.classList.add("btn");
+
+          //unhide previously explored text
+          unhideEl.classList.remove('hide');
+          
+
+          
+
+
+
+          
+
           console.log(factsURL);
+
+
 
 
         });
     });
 }
 var cardHeadEl = document.getElementById('nametitle');
-
+var popEl = document.getElementById('population');
+var dataPageEl = document.getElementById('wikidata-page');
 var previousSearches = [];
+var unhideEl = document.getElementById('unhide');
+
 
 var historyEl = document.getElementById("search-list");
 

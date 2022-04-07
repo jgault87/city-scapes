@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>City Scapes</title>
   <link rel="icon" type="image/x-icon" href="/assets/Images/icons8-falcon-16.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 
 <body class="flex-column min-100-vh">
@@ -27,21 +30,24 @@
       <!-- this is where the user inputs their city name -->
       <div class="container">
     <div class="card-input">
-      <h3 class="card-header text-uppercase">Enter a City Name</h3>
+      <h3 class="card-header">Enter a City Name</h3>
       <form id="user-form" class="card-body">
         <label class="form-label" for="cityname">City Name</label>
         <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
-        <button type="submit" class="btn">Get Your Info></button>
+        <button type="submit" class="btn">search</button>
       </form>
-    </div>
+    </div><h5 class="hide text-center" id="unhide">Previously Explored:</h5>
        <ul id="search-list"></ul>
     </div>
    
-
-    <div class="row"><h5 class='card white-text' id="nametitle"></h5>
+<hr>
+    <div class="row text-center"><h5 class='card white-text' id="nametitle"></h5>
+      <h5 class='card white-text' id="population"></h5>
+      <h5 class='card white-text' id="current-time"></h5>
+        <h5 id="wikidata-page"></h5>
       <div class="card">
         <div class="card-image">
-          <img class="materialboxed" id="image" src=" " alt="city photo">
+          <img class=" materialboxed" id="image" src=" " alt="city photo">
           <span class="card-title">Click to Enlarge</span>
         </div>
       </div>
