@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>City Scapes</title>
   <link rel="icon" type="image/x-icon" href="/assets/Images/icons8-falcon-16.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
 </head>
 
 <body class="flex-column min-100-vh">
@@ -22,93 +25,45 @@
     </h1>
   </header>
 
-  <!-- <div class="col s8"> -->
-      <!-- this is where the user inputs their city name -->
-      <div class="card-input">
+ 
+        <div class="card-input">
         <h4 class="card-header">Enter a City Name:</h4>
         <form id="user-form" class="card-body">
-          <!-- <label class="form-label" for="cityname">City Name</label> -->
-          <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
+         <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
           <button type="submit" class="btn">Search</button>
         </form>
       </div>
       <ul id="search-list"></ul>
 
   <main>
-    <!-- <div class="col s8"> -->
-      <!-- this is where the user inputs their city name -->
-    <!-- <div class="card-input">
-      <h4 class="card-header text-uppercase">Enter a City Name:</h4>
-      <form id="user-form" class="card-body">
-        <!-- <label class="form-label" for="cityname">City Name</label> -->
-        <!-- <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
-        <button type="submit" class="btn">Search</button>
-      </form>
-    </div>
-    <ul id="search-list"></ul> -->
-
-    <!-- this is the basic empty box
-    <div class="col-12 col-md-8">
-      <h2 class="subtitle"> City From Space <span id="city-search-term"></span></h2>
-      <div id="photo-container" class="picture-fromSpace">
-
-    </div> -->
-
-    <div class="card-action">
+         
+  
+   <div class="card-action">
       <div class="wrapper">
         <a id="cost" class="waves-effect waves-light btn">Cost of Living</a>
         <a id="salary" class="waves-effect waves-light btn">Salary Calculator</a>
         <a id="climate" class="waves-effect waves-light btn">Climate</a>
         <a id="safety" class="waves-effect waves-light btn">crime rate</a>
-      <!-- <a href="#">This is a link or it could be a button to launch the modal for more information</a> -->
+     
       </div>
     </div>
       
-    <!-- <div class="row"> -->
+   <div class="card">
+   <div class="card-image">
+   <img class="materialboxed" id="image" src=" " alt="city photo">
+   <span class="card-title">Click Picture to Enlarge</span>   
+<hr>
+    <div class="row text-center"><h5 class='card white-text' id="nametitle"></h5>
+      <h5 class='card white-text' id="population"></h5>
+      <h5 class='card white-text' id="current-time"></h5>
+        <h5 id="wikidata-page"></h5>
       <div class="card">
         <div class="card-image">
-          <img class="materialboxed" id="image" src=" " alt="city photo">
-          <span class="card-title">Click Picture to Enlarge</span>
-        </div>
-      </div>
-    <!-- </div> -->
-    <!-- <div class="card-content">
-      <div class="row">
-        <div class="col 16 s4">
-          <i class="small material-icons">flare</i>
-          <span class="facts" id="fact1"> fact 1</span> -->
+          <img class=" materialboxed" id="image" src=" " alt="city photo">
+          <span class="card-title">Click to Enlarge</span>
 
-          <!-- Fact 1 goes here -->
-        <!-- </div>
-        <div class="col 16 s4">
-          <i class="small material-icons">flare</i>
-          <span class="facts" id="fact2"> fact 2</span>
-        </div> -->
-          <!-- Fact 2 goes here -->
-        
-        <!-- <div class="col 16 s4">
-          <i class="small material-icons">flare</i>
-          <span class="facts" id="fact3"> fact 3</span>
-          <!-- Fact 3 goes here -->
-        <!-- </div> -->
-        <!-- this is a section where we can insert a hot link wink wink
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div> -->
-
-        <!-- <div class="card-action">
-          <div class="wrapper">
-            <a id="cost" class="waves-effect waves-light btn">Cost of Living</a>
-            <a id="salary" class="waves-effect waves-light btn">Salary Calculator</a>
-            <a id="climate" class="waves-effect waves-light btn">Climate</a>
-            <a id="safety" class="waves-effect waves-light btn">crime rate</a>
-          <!-- <a href="#">This is a link or it could be a button to launch the modal for more information</a> -->
-          <!-- </div> -->
-        <!-- </div> -->
-      <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </div> -->
+<hr> 
+         
   </main>
 
   <footer class="page-footer">
@@ -121,6 +76,7 @@
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
+
           <h5 class="white-text"> Content Creators</h5>
           <ul>
             <li> Natalya  <i class="tiny material-icons">flare</i></li>
@@ -128,6 +84,7 @@
             <li> Ellen  <i class="tiny material-icons">flare</i></li>
             <li> JJ</li>
           </ul>
+
         </div>
       </div>
     </div>
@@ -137,7 +94,6 @@
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Catherine added link to script.js -->
   <script type="text/javascript" src="./assets/js/script.js"></script>
   <script type="text/javascript" src="./assets/js/firstcall.js"></script>
 </body>
