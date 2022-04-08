@@ -24,6 +24,8 @@ userFormEl.addEventListener("submit", function(event) {
     renderHistory();
     storeHistory();
 
+    var url;
+
     // api url. remove spaces from input and replace spaces with dashes, and make all letters lowercase
     var url = "https://api.teleport.org/api/urban_areas/slug:" + getCityEl.value.replace(/\s+/g, '-').toLowerCase() + "/images/";
 
