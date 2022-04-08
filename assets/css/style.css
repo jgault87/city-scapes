@@ -1,6 +1,5 @@
 :root {
-
-  --primary: #560A86;
+  --primary: #560a86;
   --secondary: #9caea9;
   --tertiary: #788585;
   --light-dark: #6f6866;
@@ -13,10 +12,10 @@
 }
 
 body {
-  background-color: #42455a; 
+  background-color: #42455a;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif; 
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 16px;
 }
@@ -30,14 +29,11 @@ h1 {
 
 h5 {
   text-align: center;
-
-
 }
 
 h2,
 h3,
 h4,
-
 h6 {
   font-weight: 700;
   margin: 0;
@@ -64,9 +60,10 @@ p {
   color: #fff;
   border: 1px solid transparent;
   outline: none;
-  background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
+  background-image: linear-gradient(#42455a, #42455a),
+    radial-gradient(circle at top left, #fd00da, #19d7f8);
   background-origin: border-box;
-  background-clip: content-box,border-box;
+  background-clip: content-box, border-box;
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
 }
@@ -83,7 +80,6 @@ p {
 }
 
 .hero-image {
-
   background-image: url(../Images/nyc-wallpaper.png);
   background-color: rgb(29, 15, 155);
   height: 250px;
@@ -99,21 +95,17 @@ p {
 }
 
 .hero-text p {
-
   font-size: 35px;
   color: azure;
   position: absolute;
 }
-
 
 .card {
   background-color: #19dafa;
   display: flex;
   align-items: center;
   border-radius: 25px;
-  width: 60%
-  
-
+  width: 60%;
 }
 
 .card-action {
@@ -121,7 +113,6 @@ p {
   width: 35%;
   margin-left: 10px;
   margin-top: 10%;
-
 }
 
 .card-input {
@@ -145,7 +136,7 @@ p {
 }
 
 .card-header {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   color: #fff;
   background-color: #42455a;
   padding: 2.5%;
@@ -159,7 +150,6 @@ p {
 .card-content {
   display: inline;
   color: aliceblue;
-
 }
 
 .facts {
@@ -169,20 +159,18 @@ p {
   border: 5px solid black;
 }
 
-  
-
 .form-label,
 .form-input,
 .form-textarea {
   display: block;
 }
-  
+
 .form-label {
   font-size: 1.1rem;
   margin: 0 0 0 5px;
   color: #fff;
 }
-  
+
 .form-input {
   width: 100%;
   padding: 3%;
@@ -192,18 +180,15 @@ p {
   border-radius: var(--border-radius);
   color: #fff;
 }
-  
-
 
 .page-footer {
-  background: linear-gradient(to right,#db1bf6,#19d7f8);
-} 
-
+  background: linear-gradient(to right, #db1bf6, #19d7f8);
+}
 
 li button {
   float: right;
   border: none;
-  height: 3.4vh;
+  height: 4.4vh;
   cursor: pointer;
   color: #fff;
   font-size: 1em;
@@ -211,37 +196,33 @@ li button {
 }
 
 ul {
-    display: inline-flex;
-
+  display: inline-flex;
 }
 
-
 li {
-  height: 4.5vh;
+  list-style: none;
+  height: 5.5vh;
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  color: white;
-  font-size: 1.3vh;
+  color: #fff;
+  font-size: 0.9em;
   line-height: 2;
-  background-color: rgba(231, 19, 203, 0.536);
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 #wikidata-page {
-
- font-size: 1.3rem;
-text-decoration: none;
-padding: 6px 5px;
-width: 100%;
-display: block;
-margin: 5px 0;
-border-radius: 15px;
-border: none;
-outline: none;
-background-color: rgba(231, 19, 203, 0.536);
-box-shadow: 3px 3px var(--dark);
-transform: translate(-1px, -1px); 
-
-} 
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(231, 19, 203, 0.536);
+  box-shadow: 3px 3px var(--dark);
+  transform: translate(-1px, -1px);
+}
