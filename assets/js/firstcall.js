@@ -68,10 +68,10 @@ function getCoordinates(city) {
 
 
           dataPageEl.innerHTML = '<a href=\"' + factsURL +'\">' + 'WIKIDATA PAGE' + '</a>';
-          dataPageEl.classList.add("btn");
+          // dataPageEl.classList.add("btn");
 
           //unhide previously explored text
-          unhideEl.classList.remove('hide');
+          // unhideEl.classList.remove('hide');
           
 
           
@@ -117,6 +117,7 @@ function renderHistory() {
     var button = document.createElement("button");
     button.textContent = "clear";
 
+    li.classList.add('card');
     historyEl.appendChild(li);
     li.appendChild(button);
   }
