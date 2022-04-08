@@ -38,6 +38,8 @@ userFormEl.addEventListener("submit", function(event) {
                 console.log(data);
                 // update the image src with the photo link of the city
                 img.src = data.photos[0].image.web;
+                //clear search field after submission
+                // resetInput(getCityEl.value);
             })
         }
     });
