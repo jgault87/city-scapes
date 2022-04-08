@@ -193,6 +193,7 @@ li button {
   color: #fff;
   font-size: 1em;
   border-radius: 10px;
+  background-color: #1d1f2b;
 }
 
 ul {
@@ -212,6 +213,8 @@ li {
   cursor: pointer;
 }
 
+
+
 #wikidata-page {
   font-size: 1.3rem;
   text-decoration: none;
@@ -222,7 +225,8 @@ li {
   border-radius: 15px;
   border: none;
   outline: none;
-  background-color: rgba(231, 19, 203, 0.536);
+  background-color: #42455a;
   box-shadow: 3px 3px var(--dark);
   transform: translate(-1px, -1px);
+
 }
