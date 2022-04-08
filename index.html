@@ -18,91 +18,115 @@
 <body class="flex-column min-100-vh">
   <header class="hero-image">
     <h1 class="hero-text">
-      <i class="large material-icons">location_city</i> City Scapes
+      <i class="large material-icons">location_city</i> CityScapes
     </h1>
   </header>
+
+  <!-- <div class="col s8"> -->
+      <!-- this is where the user inputs their city name -->
+      <div class="card-input">
+        <h4 class="card-header">Enter a City Name:</h4>
+        <form id="user-form" class="card-body">
+          <!-- <label class="form-label" for="cityname">City Name</label> -->
+          <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+      <ul id="search-list"></ul>
 
   <main>
     <!-- <div class="col s8"> -->
       <!-- this is where the user inputs their city name -->
-    <div class="card-input">
-      <h3 class="card-header text-uppercase">Enter a City Name</h3>
+    <!-- <div class="card-input">
+      <h4 class="card-header text-uppercase">Enter a City Name:</h4>
       <form id="user-form" class="card-body">
-        <label class="form-label" for="cityname">City Name</label>
-        <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
-        <button type="submit" class="btn">Get Your Info></button>
+        <!-- <label class="form-label" for="cityname">City Name</label> -->
+        <!-- <input name="cityname" aria-label="Enter a city" id="city-name" type="text" autofocus="true" class="form-input">
+        <button type="submit" class="btn">Search</button>
       </form>
     </div>
-    <ul id="search-list"></ul>
+    <ul id="search-list"></ul> -->
 
     <!-- this is the basic empty box
     <div class="col-12 col-md-8">
       <h2 class="subtitle"> City From Space <span id="city-search-term"></span></h2>
-      <div id="photo-container" class="picture-fromSpace"></div> -->
+      <div id="photo-container" class="picture-fromSpace">
 
-    <div class="row">
+    </div> -->
+
+    <div class="card-action">
+      <div class="wrapper">
+        <a id="cost" class="waves-effect waves-light btn">Cost of Living</a>
+        <a id="salary" class="waves-effect waves-light btn">Salary Calculator</a>
+        <a id="climate" class="waves-effect waves-light btn">Climate</a>
+        <a id="safety" class="waves-effect waves-light btn">crime rate</a>
+      <!-- <a href="#">This is a link or it could be a button to launch the modal for more information</a> -->
+      </div>
+    </div>
+      
+    <!-- <div class="row"> -->
       <div class="card">
         <div class="card-image">
           <img class="materialboxed" id="image" src=" " alt="city photo">
-          <span class="card-title">Click to Enlarge</span>
+          <span class="card-title">Click Picture to Enlarge</span>
         </div>
       </div>
-    </div>
-    <div class="card-content">
+    <!-- </div> -->
+    <!-- <div class="card-content">
       <div class="row">
         <div class="col 16 s4">
           <i class="small material-icons">flare</i>
-          <span class="facts" id="fact1"> fact 1</span>
+          <span class="facts" id="fact1"> fact 1</span> -->
 
           <!-- Fact 1 goes here -->
-        </div>
+        <!-- </div>
         <div class="col 16 s4">
           <i class="small material-icons">flare</i>
           <span class="facts" id="fact2"> fact 2</span>
-        </div>
+        </div> -->
           <!-- Fact 2 goes here -->
         
-        <div class="col 16 s4">
+        <!-- <div class="col 16 s4">
           <i class="small material-icons">flare</i>
           <span class="facts" id="fact3"> fact 3</span>
           <!-- Fact 3 goes here -->
-        </div>
-<hr> 
+        <!-- </div> -->
         <!-- this is a section where we can insert a hot link wink wink
             <div class="card-action">
               <a href="#">This is a link</a>
             </div> -->
 
-        <div class="card-action">
-          <div class="container">
-          <a id="cost" class="waves-effect waves-light btn">Cost of Living</a>
-          <a id="salary" class="waves-effect waves-light btn">Salary Calculator</a>
-          <a id="climate" class="waves-effect waves-light btn">Climate</a>
-          <a id="safety" class="waves-effect waves-light btn">crime rate</a>
+        <!-- <div class="card-action">
+          <div class="wrapper">
+            <a id="cost" class="waves-effect waves-light btn">Cost of Living</a>
+            <a id="salary" class="waves-effect waves-light btn">Salary Calculator</a>
+            <a id="climate" class="waves-effect waves-light btn">Climate</a>
+            <a id="safety" class="waves-effect waves-light btn">crime rate</a>
           <!-- <a href="#">This is a link or it could be a button to launch the modal for more information</a> -->
-        </div>
-      </div>
-    </div>
-    </div>
-    </div>
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
   </main>
 
   <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
+          <h5 class="white-text">About</h5>
           <p class="grey-text text-lighten-4">
-            We can add a short desription of app, or nothing at all
+            Not sure where to go next? Use CityScapes to plan your next move.
           </p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text"> Contact Creators (we can add email or nothing at all)</h5>
+          <h5 class="white-text"> Content Creators</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Natalya</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Cathrine</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Ellen</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">JJ</a></li>
+            <li> Natalya  <i class="tiny material-icons">flare</i></li>
+            <li> Catherine  <i class="tiny material-icons">flare</i></li>
+            <li> Ellen  <i class="tiny material-icons">flare</i></li>
+            <li> JJ</li>
           </ul>
         </div>
       </div>
