@@ -15,20 +15,20 @@
     }
   };
   
-  fetch('https://community-citybikes.p.rapidapi.com/valenbisi.json', 
-  city +
-    "name" +
-    "idx" +
-    "number" +
-    "free" +
-    "bikes" +
-    "coordinates" +
-    "&lat=&lng" +
-    "station_url")
+  fetch('https://community-citybikes.p.rapidapi.com/networks.json', options)
+  // city +
+  //   "name" +
+  //   "idx" +
+  //   "number" +
+  //   "free" +
+  //   "bikes" +
+  //   "coordinates" +
+  //   "&lat=&lng" +
+  //   "station_url")
     
     .then(response => response.json())
-    .then(response => console.log(response))
-    .catch(err => console.error(err)); { 
+    .then(response => {
+      console.log(response)
       if (response.ok) {
         // log response
         console.log(response);
@@ -36,11 +36,12 @@
             // long data returned from server
             console.log(data);
         var factEl = document.getElementById("fact");
-        factEl.textContent = data.fact;
-        factEl.innerText = data.fact
+        factEl.textContent = data[0].city;
         })
       } 
-    };
+     })
+    .catch(err => console.error(err)); 
+      
     
   
     
