@@ -73,17 +73,7 @@ function getCoordinates(city) {
           //unhide previously explored text
           // unhideEl.classList.remove('hide');
           
-
-          
-
-
-
-          
-
           console.log(factsURL);
-
-
-
 
         });
     });
@@ -112,6 +102,7 @@ function renderHistory() {
       // getCoordinates(searchReturn);
 
       //  pass to function for search
+      renderteleportAPI(searchReturn[0]);
     });
 
     var button = document.createElement("button");
@@ -138,6 +129,7 @@ function init() {
 function storeHistory() {
   // Stringify and set key in localStorage array
   localStorage.setItem("previousSearches", JSON.stringify(previousSearches));
+  resetInput();
 }
 
 historyEl.addEventListener("click", function (event) {
@@ -147,7 +139,7 @@ historyEl.addEventListener("click", function (event) {
     var index = element.parentElement.getAttribute("data-index");
     previousSearches.splice(index, 1);
 
-    storeHistory();
+    //storeHistory();
     renderHistory();
   }
 });
